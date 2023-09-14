@@ -114,14 +114,14 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;LoginServiceNow workflow started!&quot;]" />
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Extract SnowURl from Orchestrator&quot;]" />
-    <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="SnowURL" CacheStrategy="None" DisplayName="Get Asset" FolderPath="jyoti.raghav@uipath.com's workspace" sap:VirtualizedContainerService.HintSize="484,144.66666666666666" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+    <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="SnowURL" CacheStrategy="None" DisplayName="Get Asset" FolderPath="CHD_Customer Help Desk App" sap:VirtualizedContainerService.HintSize="484,144.66666666666666" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
       <ui:GetRobotAsset.Value>
         <OutArgument x:TypeArguments="x:String">[inServiceNow]</OutArgument>
       </ui:GetRobotAsset.Value>
     </ui:GetRobotAsset>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;ServiceNow URL : &quot; + inServiceNow]" />
     <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="484,92" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[inServiceNow]" />
-    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="SnowPwd" CacheStrategy="None" DisplayName="Get Credential" FolderPath="jyoti.raghav@uipath.com's workspace" sap:VirtualizedContainerService.HintSize="484,144.66666666666666" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[inPwd]" Username="[inUserName]" />
+    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="SnowPwd" CacheStrategy="None" DisplayName="Get Credential" FolderPath="CHD_Customer Help Desk App" sap:VirtualizedContainerService.HintSize="484,144.66666666666666" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[inPwd]" Username="[inUserName]" />
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Extracted Snow credentials from Orchestrator userID : &quot; + inUserName]" />
     <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="484,92" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[inUserName]" />
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ServiceNow" sap:VirtualizedContainerService.HintSize="484,1615.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="81fbc11b-1262-4abc-949c-16b5f9e24cbf" Version="V2">
